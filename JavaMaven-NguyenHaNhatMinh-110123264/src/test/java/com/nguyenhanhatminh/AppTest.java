@@ -6,23 +6,17 @@ import static org.junit.Assert.*;
 public class AppTest {
 
     @Test
-    public void testIsPrimeCN() {
-        assertFalse(App.isPrimeCN(1));
-        assertTrue(App.isPrimeCN(7));
-        assertFalse(App.isPrimeCN(9));
+    public void testPhuongTrinhCoMotNghiem() {
+        assertEquals("x = 2.0", App.giaiPhuongTrinhBac1(2, -4));
     }
 
     @Test
-    public void testIsPrimeVSN() {
-        assertFalse(App.isPrimeVSN(0));
-        assertTrue(App.isPrimeVSN(11));
-        assertFalse(App.isPrimeVSN(15));
+    public void testPhuongTrinhVoSoNghiem() {
+        assertEquals("VO_SO_NGHIEM", App.giaiPhuongTrinhBac1(0, 0));
     }
 
     @Test
-    public void testIsPrimeVN() {
-        assertFalse(App.isPrimeVN(-5));
-        assertTrue(App.isPrimeVN(13));
-        assertFalse(App.isPrimeVN(100));
+    public void testPhuongTrinhVoNghiem() {
+        assertEquals("VO_NGHIEM", App.giaiPhuongTrinhBac1(0, 5));
     }
 }
